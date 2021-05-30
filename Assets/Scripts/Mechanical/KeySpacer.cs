@@ -19,6 +19,6 @@ public class KeySpacer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = transform.parent.position + new Vector3(0, 0, number * keySpace.floatValue);
+        //transform.position = transform.parent.position + new Vector3(0, 0, number * keySpace.floatValue);
     }
 }

@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae779ba548aed4f4180fecaa66b262bc, type: 3}
   m_Name: KeySpace
   m_EditorClassIdentifier: 
-  floatValue: 0.12
+  floatValue: 0.109

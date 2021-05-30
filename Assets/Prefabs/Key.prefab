@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 2019334259479491324}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1.1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -112,6 +112,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   originalMaterial: {fileID: 2100000, guid: a624327dd28d8cd4e93beb0af7755120, type: 2}
   strikeMaterial: {fileID: 2100000, guid: 33018f00f18ddbd44bde7fcc750e8876, type: 2}
+  aiMaterial: {fileID: 2100000, guid: 49bb9ecbe02acf842a9078b4a77a9f30, type: 2}
+  aiColorTime: 0.5
 --- !u!114 &6457174388570910822
 MonoBehaviour:
   m_ObjectHideFlags: 0

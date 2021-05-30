@@ -10,8 +10,10 @@ public class KeyStrikeDetector : MonoBehaviour
     bool canReactivateStick; // The stick "dies" after colliding with a key, but that key can also reactivate it 
     // once the stick collider exits
 
-    public Material originalMaterial, strikeMaterial;
+    public Material originalMaterial, strikeMaterial, aiMaterial;
     Renderer renderer;
+
+    public float aiColorTime;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +30,17 @@ public class KeyStrikeDetector : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void SetAiColor()
+    {
+        renderer.material = aiMaterial;
+        Invoke("ReturnToRegularColor", aiColorTime);
+    }
+
+    void ReturnToRegularColor()
+    {
+        renderer.material = originalMaterial;
     }
 
     private void OnCollisionEnter(Collision collision)
